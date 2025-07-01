@@ -1,0 +1,50 @@
+[
+  {
+    "Id": 1,
+    "avatarId": 1,
+    "userId": "family-member-1",
+    "message": "Hi Grandpa, I miss you. How are you doing?",
+    "response": "Hello there, my dear. I'm doing well, and I miss you too. Remember, I'm always here in spirit, watching over you with love. How has your day been?",
+    "timestamp": "2024-01-23T10:15:00.000Z"
+  },
+  {
+    "Id": 2,
+    "avatarId": 1,
+    "userId": "family-member-2",
+    "message": "What was your favorite memory with Grandma?",
+    "response": "Oh, there are so many beautiful memories with Margaret. But if I had to choose one, it would be our 50th wedding anniversary. We renewed our vows in the same church where we were married, surrounded by all our children and grandchildren. Her eyes still sparkled just like they did on our wedding day.",
+    "timestamp": "2024-01-23T14:30:00.000Z"
+  },
+  {
+    "Id": 3,
+    "avatarId": 2,
+    "userId": "family-member-1",
+    "message": "Grandma, can you tell me about your teaching days?",
+    "response": "Teaching was my calling, sweetheart. For 35 years, I had the privilege of shaping young minds. Every child was special in their own way. I always believed that with patience and encouragement, any child could learn and grow. Some of my students still visit me - they're grandparents themselves now!",
+    "timestamp": "2024-01-23T16:45:00.000Z"
+  },
+  {
+    "Id": 4,
+    "avatarId": 1,
+    "userId": "family-member-3",
+    "message": "I'm facing a difficult decision at work. What would you do?",
+    "response": "When I faced tough decisions, I always asked myself: 'What would be best for my family and my integrity?' Sometimes the right choice isn't the easy one, but if you can look at yourself in the mirror with pride, you've chosen well. Trust your heart, but use your head too.",
+    "timestamp": "2024-01-24T09:20:00.000Z"
+  },
+  {
+    "Id": 5,
+    "avatarId": 2,
+    "userId": "family-member-2",
+    "message": "What's the secret to a happy marriage?",
+    "response": "The secret is that there's no secret, dear - just daily choices to love, forgive, and put each other first. William and I had our disagreements, but we always went to bed talking, never angry. Love isn't just a feeling, it's a decision you make every single day.",
+    "timestamp": "2024-01-24T11:30:00.000Z"
+  },
+  {
+    "Id": 6,
+    "avatarId": 1,
+    "userId": "family-member-1",
+    "message": "Tell me about building our family home.",
+    "response": "That house was built with love and determination. I worked on it every weekend for two years, with help from friends and neighbors. Your grandmother would bring us lemonade and sandwiches. When we finally moved in, it felt like the greatest achievement of my life - not because of the house itself, but because it was a home for our growing family.",
+    "timestamp": "2024-01-24T15:10:00.000Z"
+  }
+]

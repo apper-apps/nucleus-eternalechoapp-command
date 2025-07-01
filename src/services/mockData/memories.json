@@ -1,0 +1,74 @@
+[
+  {
+    "Id": 1,
+    "avatarId": 1,
+    "question": "What's the most important lesson life has taught you?",
+    "answer": "The most important lesson I've learned is that time with family is the greatest treasure you can have. Work will always be there, but moments with your loved ones are irreplaceable. I wish I had understood this better when I was younger.",
+    "mediaUrl": null,
+    "category": "wisdom",
+    "createdAt": "2024-01-15T09:00:00.000Z"
+  },
+  {
+    "Id": 2,
+    "avatarId": 1,
+    "question": "Tell me about your favorite family tradition.",
+    "answer": "Every Christmas Eve, we would gather around the piano and sing carols. Margaret would play, and all the children and grandchildren would join in. Even the little ones who couldn't really sing would hum along. Those are the moments I treasure most.",
+    "mediaUrl": "christmas_memory_audio.wav",
+    "category": "family",
+    "createdAt": "2024-01-16T10:30:00.000Z"
+  },
+  {
+    "Id": 3,
+    "avatarId": 1,
+    "question": "What advice would you give to your younger self?",
+    "answer": "I would tell my younger self to worry less about the future and enjoy the present more. Don't rush through life trying to achieve the next goal. Stop and appreciate the small moments - a child's laugh, a sunset, a quiet moment with your spouse.",
+    "mediaUrl": null,
+    "category": "advice",
+    "createdAt": "2024-01-17T15:45:00.000Z"
+  },
+  {
+    "Id": 4,
+    "avatarId": 2,
+    "question": "What values are most important to you?",
+    "answer": "Love and kindness above all else. I believe that if you lead with love in everything you do, you can't go wrong. Be kind to everyone you meet - you never know what battles they're fighting.",
+    "mediaUrl": null,
+    "category": "values",
+    "createdAt": "2024-01-20T16:00:00.000Z"
+  },
+  {
+    "Id": 5,
+    "avatarId": 2,
+    "question": "Tell me about a moment that changed your perspective on life.",
+    "answer": "When I held my first grandchild, everything changed. I realized that love multiplies - it doesn't divide. Each child, each grandchild brought more love into my heart, not less. That's when I truly understood the meaning of unconditional love.",
+    "mediaUrl": "grandchild_memory.wav",
+    "category": "experiences",
+    "createdAt": "2024-01-21T11:20:00.000Z"
+  },
+  {
+    "Id": 6,
+    "avatarId": 1,
+    "question": "What do you want future generations to know about happiness?",
+    "answer": "Happiness isn't found in things or achievements - it's found in relationships and simple pleasures. A good book, a home-cooked meal shared with family, working with your hands to create something beautiful. These are the sources of true contentment.",
+    "mediaUrl": null,
+    "category": "wisdom",
+    "createdAt": "2024-01-18T13:15:00.000Z"
+  },
+  {
+    "Id": 7,
+    "avatarId": 2,
+    "question": "What's your favorite recipe and the story behind it?",
+    "answer": "My apple pie recipe came from my mother, and her mother before that. The secret isn't in the ingredients - it's in the love you put into making it. Every time I rolled out that dough, I was thinking about the family who would gather around the table to share it.",
+    "mediaUrl": "apple_pie_story.wav",
+    "category": "family",
+    "createdAt": "2024-01-22T09:45:00.000Z"
+  },
+  {
+    "Id": 8,
+    "avatarId": 1,
+    "question": "What are you most proud of in your life?",
+    "answer": "I'm most proud of the family Margaret and I built together. Not just our children, but the values we instilled in them. Seeing them become caring, responsible adults who are now raising their own families with love - that's my greatest accomplishment.",
+    "mediaUrl": null,
+    "category": "life",
+    "createdAt": "2024-01-19T14:30:00.000Z"
+  }
+]

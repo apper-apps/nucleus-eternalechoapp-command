@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "name": "Grandpa William",
+    "photos": [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face"
+    ],
+    "voiceSamples": [
+      "voice_sample_1.wav",
+      "voice_sample_2.wav"
+    ],
+    "personality": {
+      "hobbies": "Woodworking, gardening, reading history books, playing chess",
+      "values": "Family first, integrity, hard work, kindness to all",
+      "lifeHighlights": "Served in the Navy, built the family home, raised three wonderful children",
+      "familyInfo": "Married to Margaret for 52 years, father of three, grandfather of seven"
+    },
+    "createdAt": "2024-01-15T08:30:00.000Z",
+    "homeLevel": 3,
+    "memoryCount": 18,
+    "completionPercentage": 75
+  },
+  {
+    "Id": 2,
+    "name": "Grandma Margaret",
+    "photos": [
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face"
+    ],
+    "voiceSamples": [
+      "margaret_voice_1.wav"
+    ],
+    "personality": {
+      "hobbies": "Cooking, quilting, volunteering at church, tending the rose garden",
+      "values": "Love, compassion, education, helping others",
+      "lifeHighlights": "Teacher for 35 years, raised three children, active in community service",
+      "familyInfo": "Beloved wife and mother, known for her apple pie and warm hugs"
+    },
+    "createdAt": "2024-01-20T14:15:00.000Z",
+    "homeLevel": 2,
+    "memoryCount": 12,
+    "completionPercentage": 60
+  }
+]
