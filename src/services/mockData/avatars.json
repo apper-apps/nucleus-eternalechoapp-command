@@ -47,9 +47,10 @@
     "memoryCount": 12,
     "completionPercentage": 60,
     "legacyType": "personal",
-    "emotionalProfile": {
+"emotionalProfile": {
       "warmth": "highest",
       "wisdom": "nurturing",
       "familyBond": "devoted"
     }
+  }
 ]
