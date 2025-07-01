@@ -136,11 +136,11 @@ const CreateAvatar = () => {
     <div className="p-4 lg:p-8 max-w-4xl mx-auto">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2 font-outfit">
-          Create Your Digital Avatar
+<h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2 font-outfit">
+          Create Your Personal Legacy Avatar
         </h1>
         <p className="text-gray-600 text-lg">
-          Let's bring your digital self to life, step by step
+          Preserve your voice, wisdom, and love for the people who matter most
         </p>
       </div>
 
@@ -182,11 +182,11 @@ const CreateAvatar = () => {
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center">
                   <ApperIcon name="User" size={32} className="text-purple-500" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-800 mb-2 font-outfit">
-                  What's your name?
+<h2 className="text-2xl font-bold text-gray-800 mb-2 font-outfit">
+                  What should your loved ones call you?
                 </h2>
                 <p className="text-gray-600">
-                  This will be how your avatar identifies itself to others
+                  How do you want to be remembered? This is how your avatar will introduce itself to family and friends
                 </p>
               </div>
 
@@ -217,11 +217,11 @@ const CreateAvatar = () => {
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center">
                   <ApperIcon name="Camera" size={32} className="text-purple-500" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-800 mb-2 font-outfit">
-                  Upload Your Photos
+<h2 className="text-2xl font-bold text-gray-800 mb-2 font-outfit">
+                  Share Your Beautiful Face
                 </h2>
                 <p className="text-gray-600">
-                  Add multiple photos from different angles and expressions
+                  Upload photos that capture your warmth, your smile, and the love in your eyes - the way you want to be remembered
                 </p>
               </div>
 
@@ -291,11 +291,11 @@ const CreateAvatar = () => {
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center">
                   <ApperIcon name="Mic" size={32} className="text-purple-500" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-800 mb-2 font-outfit">
-                  Record Your Voice
+<h2 className="text-2xl font-bold text-gray-800 mb-2 font-outfit">
+                  Preserve Your Voice Forever
                 </h2>
                 <p className="text-gray-600">
-                  Upload voice samples to clone your unique speaking style
+                  Record yourself speaking so your loved ones can always hear your voice - your comfort, your guidance, your love
                 </p>
               </div>
 
@@ -380,59 +380,59 @@ const CreateAvatar = () => {
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center">
                   <ApperIcon name="Heart" size={32} className="text-purple-500" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-800 mb-2 font-outfit">
-                  Tell Us About Yourself
+<h2 className="text-2xl font-bold text-gray-800 mb-2 font-outfit">
+                  Share Your Heart and Soul
                 </h2>
                 <p className="text-gray-600">
-                  Help us understand your personality and background
+                  Tell us about what makes you who you are - your passions, your wisdom, the love you want to leave behind
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Hobbies & Interests
+<label className="block text-sm font-semibold text-gray-700 mb-2">
+                    What brings you joy in life?
                   </label>
                   <textarea
                     value={formData.personality.hobbies}
                     onChange={(e) => handleInputChange('personality.hobbies', e.target.value)}
-                    placeholder="Reading, gardening, cooking, music..."
+                    placeholder="The activities that light up your soul - gardening, reading stories to grandchildren, cooking family recipes..."
                     className="w-full h-24 px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-purple-500 focus:ring-4 focus:ring-purple-500/20 resize-none"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Core Values
+<label className="block text-sm font-semibold text-gray-700 mb-2">
+                    What matters most to you?
                   </label>
                   <textarea
                     value={formData.personality.values}
                     onChange={(e) => handleInputChange('personality.values', e.target.value)}
-                    placeholder="Family, integrity, kindness, learning..."
+                    placeholder="The principles that guide your heart - love for family, treating everyone with kindness, never giving up hope..."
                     className="w-full h-24 px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-purple-500 focus:ring-4 focus:ring-purple-500/20 resize-none"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Life Highlights
+<label className="block text-sm font-semibold text-gray-700 mb-2">
+                    What are you most proud of?
                   </label>
                   <textarea
                     value={formData.personality.lifeHighlights}
                     onChange={(e) => handleInputChange('personality.lifeHighlights', e.target.value)}
-                    placeholder="Greatest achievements, memorable moments..."
+                    placeholder="The moments that shaped you, the love you've given, the difference you've made in others' lives..."
                     className="w-full h-24 px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-purple-500 focus:ring-4 focus:ring-purple-500/20 resize-none"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Family Information
+<label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Tell us about the people you love
                   </label>
                   <textarea
                     value={formData.personality.familyInfo}
                     onChange={(e) => handleInputChange('personality.familyInfo', e.target.value)}
-                    placeholder="Tell us about your family..."
+                    placeholder="Share about your family, friends, and loved ones - how they make you smile, what you want them to know about your love for them..."
                     className="w-full h-24 px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-purple-500 focus:ring-4 focus:ring-purple-500/20 resize-none"
                   />
                 </div>

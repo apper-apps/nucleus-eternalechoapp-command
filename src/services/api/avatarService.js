@@ -20,19 +20,6 @@ class AvatarService {
     return { ...avatar };
   }
 
-  async create(avatarData) {
-    await this.delay(300);
-    const newAvatar = {
-      ...avatarData,
-      Id: this.nextId++,
-      createdAt: new Date().toISOString(),
-      homeLevel: avatarData.homeLevel || 1,
-      memoryCount: avatarData.memoryCount || 0,
-      completionPercentage: avatarData.completionPercentage || 25
-    };
-    this.avatars.unshift(newAvatar);
-    return { ...newAvatar };
-  }
 
   async update(id, updates) {
     await this.delay(250);

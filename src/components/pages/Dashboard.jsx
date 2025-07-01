@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { toast } from 'react-toastify';
-import ApperIcon from '@/components/ApperIcon';
-import Button from '@/components/atoms/Button';
-import Card from '@/components/atoms/Card';
-import ProgressRing from '@/components/molecules/ProgressRing';
-import AvatarPreview from '@/components/molecules/AvatarPreview';
-import Loading from '@/components/ui/Loading';
-import Error from '@/components/ui/Error';
-import Empty from '@/components/ui/Empty';
-import { avatarService } from '@/services/api/avatarService';
-import { memoryService } from '@/services/api/memoryService';
-import { interactionService } from '@/services/api/interactionService';
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { toast } from "react-toastify";
+import ApperIcon from "@/components/ApperIcon";
+import Card from "@/components/atoms/Card";
+import Button from "@/components/atoms/Button";
+import ProgressRing from "@/components/molecules/ProgressRing";
+import AvatarPreview from "@/components/molecules/AvatarPreview";
+import Error from "@/components/ui/Error";
+import Empty from "@/components/ui/Empty";
+import Loading from "@/components/ui/Loading";
+import { avatarService } from "@/services/api/avatarService";
+import { memoryService } from "@/services/api/memoryService";
+import { interactionService } from "@/services/api/interactionService";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -96,12 +96,12 @@ const Dashboard = () => {
           animate={{ opacity: 1, y: 0 }}
           className="flex flex-col sm:flex-row sm:items-center sm:justify-between"
         >
-          <div>
+<div>
             <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2 font-outfit">
-              Welcome back! 👋
+              Welcome back! 💕
             </h1>
             <p className="text-gray-600 text-lg">
-              Continue building your digital legacy
+              Continue preserving your love and wisdom for those who matter most
             </p>
           </div>
           <Button
@@ -110,7 +110,7 @@ const Dashboard = () => {
             size="lg"
             className="mt-4 sm:mt-0"
           >
-            Create New Avatar
+            Create Legacy Avatar
           </Button>
         </motion.div>
       </div>
@@ -172,11 +172,10 @@ const Dashboard = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* My Avatars */}
-        <div className="lg:col-span-2">
+<div className="lg:col-span-2">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 font-outfit">
-              My Avatars
+              My Legacy Avatars
             </h2>
             <Button 
               variant="ghost" 
@@ -187,12 +186,11 @@ const Dashboard = () => {
             </Button>
           </div>
 
-          {avatars.length === 0 ? (
+{avatars.length === 0 ? (
             <Empty
-              icon="UserPlus"
-              title="Create Your First Avatar"
-              description="Start preserving your digital legacy by creating your first AI avatar. Upload photos, record your voice, and share your memories."
-              actionText="Create Avatar"
+              title="Create Your First Legacy Avatar"
+              description="Begin preserving your voice, wisdom, and love for future generations. Share your stories, your values, and your heart - so those you love can always find you here."
+              actionText="Create Legacy Avatar"
               onAction={handleCreateAvatar}
             />
           ) : (

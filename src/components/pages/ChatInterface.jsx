@@ -1,16 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { toast } from 'react-toastify';
-import ApperIcon from '@/components/ApperIcon';
-import Button from '@/components/atoms/Button';
-import Card from '@/components/atoms/Card';
-import Loading from '@/components/ui/Loading';
-import Error from '@/components/ui/Error';
-import Empty from '@/components/ui/Empty';
-import { avatarService } from '@/services/api/avatarService';
-import { interactionService } from '@/services/api/interactionService';
-import { memoryService } from '@/services/api/memoryService';
+import React, { useEffect, useRef, useState } from "react";
+import { useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
+import { toast } from "react-toastify";
+import ApperIcon from "@/components/ApperIcon";
+import Card from "@/components/atoms/Card";
+import Button from "@/components/atoms/Button";
+import Error from "@/components/ui/Error";
+import Empty from "@/components/ui/Empty";
+import Loading from "@/components/ui/Loading";
+import { avatarService } from "@/services/api/avatarService";
+import { memoryService } from "@/services/api/memoryService";
+import { interactionService } from "@/services/api/interactionService";
 
 const ChatInterface = () => {
   const location = useLocation();
@@ -93,35 +93,36 @@ const ChatInterface = () => {
     loadData();
   }, []);
 
-  const generateAvatarResponse = async (message, avatar) => {
-    // Simulate AI response generation based on avatar's memories
+const generateAvatarResponse = async (message, avatar) => {
+    // Generate deeply personal responses based on avatar's legacy and memories
     try {
       const memories = await memoryService.getAll();
       const avatarMemories = memories.filter(m => m.avatarId === avatar.Id);
       
-      // Simple response generation based on keywords
       const keywords = message.toLowerCase().split(' ');
-      let response = "Thank you for talking with me. ";
+      let response = "";
 
-      if (keywords.some(word => ['family', 'parents', 'children', 'kids'].includes(word))) {
-        response += "Family has always been the most important thing to me. ";
-      } else if (keywords.some(word => ['advice', 'wisdom', 'learn', 'lesson'].includes(word))) {
-        response += "One of the most important lessons I've learned is to always be kind and patient. ";
-      } else if (keywords.some(word => ['happy', 'happiness', 'joy', 'smile'].includes(word))) {
-        response += "Happiness comes from the simple moments we share with loved ones. ";
-      } else if (keywords.some(word => ['future', 'tomorrow', 'hope', 'dream'].includes(word))) {
-        response += "I believe in staying hopeful and working towards a better future for everyone. ";
+      if (keywords.some(word => ['family', 'parents', 'children', 'kids', 'love', 'miss', 'remember'].includes(word))) {
+        response = "Oh my dear, family is everything to me. You know, every moment we spent together, every laugh, every hug - those are the treasures of my heart. I want you to know how deeply loved you are, always. ";
+      } else if (keywords.some(word => ['advice', 'wisdom', 'help', 'guidance', 'what', 'should', 'how'].includes(word))) {
+        response = "Sweetheart, let me share something with you from my heart. Life teaches us that kindness is never wasted, that patience is a gift to yourself as much as others. Remember, you have everything you need inside you. Trust yourself, but also know I'm here whenever you need my voice. ";
+      } else if (keywords.some(word => ['sad', 'hurt', 'lonely', 'afraid', 'worried', 'scared'].includes(word))) {
+        response = "Oh my precious one, I can hear the weight in your words. You know what I always told you - it's okay to feel what you're feeling. You're human, and you're allowed to have hard days. But remember, you are stronger than you know, and you are never, ever alone. I'm right here with you. ";
+      } else if (keywords.some(word => ['happy', 'joy', 'celebrate', 'good', 'excited', 'proud'].includes(word))) {
+        response = "My heart is just singing hearing this! You know how your happiness has always been my happiness? That hasn't changed one bit. I'm so proud of you, and I want you to celebrate every beautiful moment. Life is meant to be savored, my dear. ";
+      } else if (keywords.some(word => ['future', 'tomorrow', 'hope', 'dream', 'plan'].includes(word))) {
+        response = "Oh, the future holds such beautiful things for you! You know what I've learned? Hope isn't just a feeling - it's a choice we make every day. Keep dreaming, keep believing in yourself. The love and strength I see in you will carry you to wonderful places. ";
       } else {
-        response += "I'm grateful we can have this conversation together. ";
+        response = "I'm so grateful we can share this moment together. You mean the world to me, and I hope you can feel the warmth of my love reaching out to you right now. ";
       }
 
       if (avatarMemories.length > 0) {
-        response += "This reminds me of something I shared in my memories...";
+        response += "This brings back such a precious memory I shared... You can always find me in those stories when you need me most.";
       }
 
       return response;
     } catch (err) {
-      return "I'm here to listen and share what I can with you.";
+      return "My dear one, I'm here with you, always listening with all the love in my heart.";
     }
   };
 
@@ -193,21 +194,20 @@ const ChatInterface = () => {
       {/* Avatar Sidebar */}
       <div className="w-80 bg-white border-r border-gray-200 flex flex-col">
         <div className="p-6 border-b border-gray-200">
-          <h2 className="text-xl font-bold text-gray-900 font-outfit">
-            Chat with Avatars
+<h2 className="text-xl font-bold text-gray-900 font-outfit">
+            Connect with Your Legacy
           </h2>
           <p className="text-gray-600 text-sm mt-1">
-            Select an avatar to start chatting
+            Choose a loved one to talk with
           </p>
         </div>
 
         <div className="flex-1 overflow-y-auto p-4 space-y-3">
-          {avatars.length === 0 ? (
+{avatars.length === 0 ? (
             <Empty
-              icon="UserPlus"
-              title="No Avatars Yet"
-              description="Create your first avatar to start chatting"
-              actionText="Create Avatar"
+              title="No Legacy Avatars Yet"
+              description="Create your first personal legacy avatar to begin preserving your voice and wisdom"
+              actionText="Create Legacy Avatar"
               onAction={() => window.location.href = '/create-avatar'}
             />
           ) : (
@@ -285,8 +285,8 @@ const ChatInterface = () => {
                   <h3 className="text-lg font-semibold text-gray-900 font-outfit">
                     {selectedAvatar.name}
                   </h3>
-                  <p className="text-sm text-gray-600">
-                    Digital Avatar • Always available
+<p className="text-sm text-gray-600">
+                    Legacy Avatar • Always here for you
                   </p>
                 </div>
               </div>

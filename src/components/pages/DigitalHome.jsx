@@ -156,11 +156,11 @@ const DigitalHome = () => {
     <div className="p-4 lg:p-8 max-w-6xl mx-auto">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2 font-outfit">
-          Your Digital Home 🏠
+<h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2 font-outfit">
+          Your Legacy Home 🏠
         </h1>
         <p className="text-gray-600 text-lg">
-          Watch your home grow as you share more memories
+          Watch your home fill with love as you share more of your heart and wisdom
         </p>
       </div>
 

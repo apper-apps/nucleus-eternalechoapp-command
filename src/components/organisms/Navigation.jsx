@@ -8,7 +8,7 @@ const Navigation = ({ isOpen, onClose }) => {
 
   const navItems = [
     { path: '/', icon: 'LayoutDashboard', label: 'Dashboard' },
-    { path: '/create-avatar', icon: 'UserPlus', label: 'Create Avatar' },
+{ path: '/create-avatar', icon: 'UserPlus', label: 'Create Legacy Avatar' },
     { path: '/memories', icon: 'BookOpen', label: 'My Memories' },
     { path: '/digital-home', icon: 'Home', label: 'Digital Home' },
     { path: '/chat', icon: 'MessageCircle', label: 'Chat' },
@@ -78,10 +78,10 @@ const Navigation = ({ isOpen, onClose }) => {
                 <ApperIcon name="Sparkles" size={24} className="text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-800 font-outfit">
+<h1 className="text-xl font-bold text-gray-800 font-outfit">
                   EternalEcho
                 </h1>
-                <p className="text-sm text-gray-500">Digital Legacy</p>
+                <p className="text-sm text-gray-500">Personal Legacy</p>
               </div>
             </div>
           </div>
@@ -100,11 +100,11 @@ const Navigation = ({ isOpen, onClose }) => {
                 <ApperIcon name="Heart" size={16} className="text-white" />
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-gray-800 truncate">
-                  Preserving memories
+<p className="text-sm font-medium text-gray-800 truncate">
+                  Love lives forever
                 </p>
                 <p className="text-xs text-gray-500">
-                  For generations
+                  In every heart you touch
                 </p>
               </div>
             </div>

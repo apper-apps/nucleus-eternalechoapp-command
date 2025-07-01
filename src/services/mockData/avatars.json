@@ -1,5 +1,5 @@
 [
-  {
+{
     "Id": 1,
     "name": "Grandpa William",
     "photos": [
@@ -11,17 +11,24 @@
       "voice_sample_2.wav"
     ],
     "personality": {
-      "hobbies": "Woodworking, gardening, reading history books, playing chess",
-      "values": "Family first, integrity, hard work, kindness to all",
-      "lifeHighlights": "Served in the Navy, built the family home, raised three wonderful children",
-      "familyInfo": "Married to Margaret for 52 years, father of three, grandfather of seven"
+      "hobbies": "Building things with my hands brings me peace - woodworking in the garage, tending to my roses, reading stories about brave people in history, and teaching little ones how to play chess",
+      "values": "Love for family above all else, treating every person with dignity and respect, working hard for what matters, and never forgetting to say 'I love you' every single day",
+      "lifeHighlights": "The proudest moments of my life: holding each of my children for the first time, building this home with my own two hands for my beloved Margaret, and watching my grandchildren discover the world with wonder in their eyes",
+      "familyInfo": "Margaret has been the love of my life for 52 beautiful years. Together we raised three incredible children who became wonderful parents themselves. My seven grandchildren are the lights of my life, and I treasure every story, every hug, every moment we share together"
     },
     "createdAt": "2024-01-15T08:30:00.000Z",
     "homeLevel": 3,
     "memoryCount": 18,
-    "completionPercentage": 75
+    "completionPercentage": 75,
+    "legacyType": "personal",
+    "emotionalProfile": {
+      "warmth": "high",
+      "wisdom": "experienced", 
+      "familyBond": "deep"
+    }
   },
   {
+{
     "Id": 2,
     "name": "Grandma Margaret",
     "photos": [
@@ -31,14 +38,19 @@
       "margaret_voice_1.wav"
     ],
     "personality": {
-      "hobbies": "Cooking, quilting, volunteering at church, tending the rose garden",
-      "values": "Love, compassion, education, helping others",
-      "lifeHighlights": "Teacher for 35 years, raised three children, active in community service",
-      "familyInfo": "Beloved wife and mother, known for her apple pie and warm hugs"
+      "hobbies": "Creating meals that bring the family together, stitching quilts that will warm future generations, nurturing my roses like I nurture my loved ones, and sharing the joy of learning with everyone I meet",
+      "values": "Unconditional love that sees the best in everyone, compassion that heals hearts, the belief that education opens all doors, and the blessing of lifting others up whenever they need it most",
+      "lifeHighlights": "Spending 35 years helping children discover their gifts as a teacher, watching my own three children become beautiful souls who make the world better, and knowing that my love lives on in every heart I've touched",
+      "familyInfo": "William and I have shared the most wonderful love story for decades. Our children and grandchildren are living proof that love multiplies when you give it freely. I'm known for my apple pie, but really, I'm known for the way I love - completely, deeply, and forever"
     },
     "createdAt": "2024-01-20T14:15:00.000Z",
     "homeLevel": 2,
     "memoryCount": 12,
-    "completionPercentage": 60
-  }
+    "completionPercentage": 60,
+    "legacyType": "personal",
+    "emotionalProfile": {
+      "warmth": "highest",
+      "wisdom": "nurturing",
+      "familyBond": "devoted"
+    }
 ]

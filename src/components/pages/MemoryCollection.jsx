@@ -19,41 +19,51 @@ const MemoryCollection = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  const memoryQuestions = [
+const memoryQuestions = [
     {
       category: 'life',
-      question: "What's the most important lesson life has taught you?",
+      question: "What's the most important thing you want your loved ones to know about living a meaningful life?",
     },
     {
       category: 'family',
-      question: "Tell me about your favorite family tradition or memory.",
+      question: "Share a moment when you felt the deepest love for your family. What made that moment so special?",
     },
     {
       category: 'wisdom',
-      question: "What advice would you give to your younger self?",
+      question: "If you could sit down with each person you love and share one piece of wisdom from your heart, what would it be?",
     },
     {
       category: 'values',
-      question: "What values are most important to you and why?",
+      question: "What values have guided your heart throughout your life, and how do you hope they'll live on in others?",
     },
     {
       category: 'experiences',
-      question: "Describe a moment that changed your perspective on life.",
+      question: "Tell me about a time when you felt truly proud of who you are. What made that moment so meaningful?",
     },
     {
       category: 'advice',
-      question: "What do you want future generations to know about happiness?",
+      question: "What do you want your children and grandchildren to remember about finding joy and hope, even in difficult times?",
+    },
+    {
+      category: 'love',
+      question: "How do you want to be remembered? What feeling do you hope lives on in the hearts of those you love?",
+    },
+    {
+      category: 'legacy',
+      question: "What story from your life do you most want to pass down through generations?",
     },
   ];
 
-  const categories = [
+const categories = [
     { id: 'all', label: 'All Memories', icon: 'BookOpen' },
     { id: 'life', label: 'Life Lessons', icon: 'Heart' },
-    { id: 'family', label: 'Family', icon: 'Users' },
+    { id: 'family', label: 'Family Love', icon: 'Users' },
     { id: 'wisdom', label: 'Wisdom', icon: 'Lightbulb' },
     { id: 'values', label: 'Values', icon: 'Star' },
-    { id: 'experiences', label: 'Experiences', icon: 'Camera' },
-    { id: 'advice', label: 'Advice', icon: 'MessageSquare' },
+    { id: 'experiences', label: 'Special Moments', icon: 'Camera' },
+    { id: 'advice', label: 'Guidance', icon: 'MessageSquare' },
+    { id: 'love', label: 'Love Letters', icon: 'Heart' },
+    { id: 'legacy', label: 'Legacy Stories', icon: 'Crown' },
   ];
 
   const loadMemories = async () => {
@@ -148,11 +158,11 @@ const MemoryCollection = () => {
       <div className="mb-8">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2 font-outfit">
-              My Memories 💭
+<h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2 font-outfit">
+              My Heart & Wisdom 💕
             </h1>
             <p className="text-gray-600 text-lg">
-              Preserve your stories, wisdom, and experiences
+              Share your love, your stories, and the wisdom that lives in your heart
             </p>
           </div>
           <Button
