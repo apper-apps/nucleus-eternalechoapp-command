@@ -21,12 +21,12 @@
     "memoryCount": 18,
     "completionPercentage": 75,
     "legacyType": "personal",
-    "emotionalProfile": {
+"emotionalProfile": {
       "warmth": "high",
       "wisdom": "experienced", 
       "familyBond": "deep"
     }
-},
+  },
   {
     "Id": 2,
     "name": "Grandma Margaret",
